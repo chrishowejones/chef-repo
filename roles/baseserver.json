@@ -1,0 +1,8 @@
+{
+  "name": "baseserver",
+  "description": "Sets up a base server with firewall rules to allow ssh",
+  "run_list": [
+    "recipe[iptables]",
+    "recipe[iptables::ssh]"
+  ]
+}
